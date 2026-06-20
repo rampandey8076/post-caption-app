@@ -1,0 +1,153 @@
+/* ─── Global Reset ─────────────────────────────────────────── */
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background: #eef3fb;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* ─── Card Wrapper ─────────────────────────────────────────── */
+section {
+  background: #ffffff;
+  padding: 48px 44px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(30, 64, 175, 0.12);
+  width: 100%;
+  max-width: 460px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+section h1 {
+  color: #1e3a8a;
+  margin-bottom: 32px;
+  font-size: 1.9rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+/* ─── Form ─────────────────────────────────────────────────── */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+  width: 100%;
+}
+
+form input[type="text"] {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1.5px solid #cdd9ed;
+  border-radius: 10px;
+  font-size: 1rem;
+  text-align: center;
+  outline: none;
+  background: #f7f9fd;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+form input[type="text"]::placeholder {
+  color: #94a3c4;
+}
+
+form input[type="text"]:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+  background: #ffffff;
+}
+
+form input[type="file"] {
+  width: 100%;
+  padding: 18px;
+  border: 2px dashed #cdd9ed;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 0.92rem;
+  text-align: center;
+  background: #f7f9fd;
+  color: #64748b;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+form input[type="file"]:hover {
+  border-color: #2563eb;
+  background: #eef4ff;
+}
+
+form button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 6px;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.3px;
+  transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+form button:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+}
+
+form button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+form button:disabled {
+  background: #b6c2da;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.feed-section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* TOP */
+  align-items: flex-start;     /* LEFT */
+  padding: 20px;
+  gap: 15px;
+}
+
+.post-card {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.post-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+.post-card p {
+  margin-top: 8px;
+  font-size: 14px;
+}
